@@ -7,7 +7,7 @@ let server = require('../index');
 
 describe('GeT', () =>{
     it('should test git pages', (done) =>{
-        chai.request(server).get('/').end((err,res)=>{
+        chai.request(server).get('/test').end((err,res)=>{
             res.should.have.status(200);
             done();
         })
@@ -17,7 +17,7 @@ describe('GeT', () =>{
 
 describe('GeT', () =>{
     it('should test git pages', (done) =>{
-        chai.request(server).get('/').end((err,res)=>{
+        chai.request(server).get('/test').end((err,res)=>{
             res.should.have.status(200);
             done();
         })
