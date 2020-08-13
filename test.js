@@ -3,7 +3,7 @@ const chaiHttp = require('chai-http');
 
 const should = chai.should();
 chai.use(chaiHttp);
-let server = require('../index.js');
+let server = require('../Node-Evaluation/index');
 
 describe('GeT', () =>{
     it('should test git pages', (done) =>{
@@ -14,14 +14,6 @@ describe('GeT', () =>{
     })
 })
 
-describe('GeT', () =>{
-    it('should test git pages', (done) =>{
-        chai.request(server).get('/home').end((err,res)=>{
-            res.should.have.status(200);
-            done();
-        })
-    })
-})
 
 describe('GeT', () =>{
     it('should test git pages', (done) =>{
